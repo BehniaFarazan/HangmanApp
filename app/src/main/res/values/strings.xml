@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">s165203SuperHangman</string>
+
+
+
+<string name="highscoreReset">Reset higscore</string>
+
+<string name="highscoretitle_label">HIGHSCORE</string>
 </resources>
