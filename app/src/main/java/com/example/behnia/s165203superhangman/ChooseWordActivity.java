@@ -27,7 +27,7 @@ public class ChooseWordActivity extends AppCompatActivity {
         WordListView.removeAllViewsInLayout();
         listViewAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, mylogic.getPossibleWord());
         WordListView.setAdapter(listViewAdapter);
-      //  WordListView.removeAllViewsInLayout();
+    //  WordListView.removeAllViewsInLayout();
         WordListView.setOnItemClickListener((AdapterView.OnItemClickListener)(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -30,6 +31,8 @@ public class Mylogic {
         this.possibleWord = list;
     }
     public List<String> getPossibleWord() {
+
+        Collections.shuffle(possibleWord);
         return possibleWord;
 
     }
