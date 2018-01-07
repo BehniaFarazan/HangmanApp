@@ -60,7 +60,7 @@ public class WinActivity extends AppCompatActivity {
         buttonPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(WinActivity.this, PlayActivity.class);
+                Intent i = new Intent(WinActivity.this, PlaySingleModeActivity.class);
                 startActivity(i);
             }
         });

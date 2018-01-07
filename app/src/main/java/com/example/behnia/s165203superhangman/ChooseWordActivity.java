@@ -9,8 +9,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.example.behnia.s165203superhangman.dto.DTO;
-
 import java.util.List;
 
 public class ChooseWordActivity extends AppCompatActivity {
@@ -34,9 +32,8 @@ public class ChooseWordActivity extends AppCompatActivity {
                 Object var =adapterView.getItemAtPosition(i);
                 String choosenWord = (String)var;
                 mylogic.setTheWord(choosenWord);
-                Intent intent = new Intent((Context)ChooseWordActivity.this, PlayActivity.class);
+                Intent intent = new Intent((Context)ChooseWordActivity.this, PlayMultiModeActivity.class);
                 ChooseWordActivity.this.startActivity(intent);
-                mylogic.updateChoosenWord();
             }
         }));
 

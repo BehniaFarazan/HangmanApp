@@ -35,7 +35,7 @@ public class LostActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mylogic.roundReset();
-                Intent i = new Intent(LostActivity.this, PlayActivity.class);
+                Intent i = new Intent(LostActivity.this, PlaySingleModeActivity.class);
                 startActivity(i);
             }
         });

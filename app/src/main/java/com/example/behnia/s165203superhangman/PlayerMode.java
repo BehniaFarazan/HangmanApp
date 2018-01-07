@@ -17,7 +17,7 @@ public class PlayerMode extends AppCompatActivity {
         buttonSinglePlayer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(PlayerMode.this,PlayActivity.class);
+                Intent i = new Intent(PlayerMode.this,PlaySingleModeActivity.class);
                 startActivity(i);
 
             }

@@ -11,9 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.behnia.s165203superhangman.R;
-
-public class PlayActivity extends AppCompatActivity implements View.OnClickListener {
+public class PlaySingleModeActivity extends AppCompatActivity implements View.OnClickListener {
 
     private final Mylogic mylogic = Mylogic.getInstance();
     TextView theWordShow, theScoreShow, theRoundShow;
@@ -33,7 +31,8 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
 
         mylogic.reset();
 
-      //FIX IT(diffrent ways to update for diiffrent player modes)  mylogic.updateWord();
+      //FIX IT(diffrent ways to update for diiffrent player modes)
+        mylogic.updateWord();
 
 
         galgePic = (ImageView) findViewById(R.id.imageView);
@@ -87,7 +86,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case 6:
                 galgePic.setImageResource(R.drawable.forkert6);
-                Intent i = new Intent(PlayActivity.this, LostActivity.class);
+                Intent i = new Intent(PlaySingleModeActivity.this, LostActivity.class);
                 startActivity(i);
                 break;
         }
@@ -132,7 +131,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
 
                     public void onClick(DialogInterface arg0, int arg1) {
-                        Intent i = new Intent(PlayActivity.this, MainMenu.class);
+                        Intent i = new Intent(PlaySingleModeActivity.this, MainMenu.class);
                         startActivity(i);
                     }
                 }).create().show();

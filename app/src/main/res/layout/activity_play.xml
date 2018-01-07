@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.behnia.s165203superhangman.PlayActivity">
+    tools:context="com.example.behnia.s165203superhangman.PlaySingleModeActivity">
     <TextView
         android:id="@+id/textViewTheLostWord"
         android:layout_width="wrap_content"
